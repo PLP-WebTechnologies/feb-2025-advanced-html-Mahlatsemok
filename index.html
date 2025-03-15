@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5</title>
+</head>
+<body>
+   <header>
+    <h1>A Registration Form</h1>
+   </header> 
+   <main>
+    <!--our paragraph-->
+     <P>A registration form is to collect necessary personal and contact information from the user or participant.<br> 
+        This can include details like <strong>name, email, password, date fields</strong> and other relevant information depending on the context.<br>
+        Enter the correct information please.
+    </P>
+    <!--here is our form-->
+    <form action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required>
+        <br>
+        <br>
+        <label for="date">Date of Birth:</label> 
+        <input type="date" id="date" name="date" placeholder="Enter your date of birth" required>
+        <br>
+        <br>
+        <legend>Gender:</legend>
+        <input type="checkbox" id="female" value="female"><label for="female">Female</label>
+        <input type="checkbox" id="male" value="male"><label for="male">Male</label>
+        <br>
+        <br>
+        <legend>Race:</legend>
+        <input type="radio" id="african" value="african"><label for="african">African</label><br>
+        <input type="radio" id="coloured" value="coloured"><label for="coloured">Coloured</label><br>
+        <input type="radio" id="indian" value="indian"><label for="indian">Indian</label><br>
+        <input type="radio" id="other" value="other"><label for="other">Other</label>
+        <br>
+        <br>
+        <label for="status">Status:</label>
+        <select>
+            <option value="select one">Select One</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorce">Divorce</option>
+        </select>
+    </form>
+    <!--A table of five contacts with name,email,mobile and address-->
+    <h3>A table of 5 contacts</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Reatlegile</td>
+            <td>reatlegile.mokhabela@gmail.com</td>
+            <td>0731235642</td>
+            <td>36 Mania Crescent</td>
+        </tr>
+        <tr>
+            <td>Atlegang</td>
+            <td>atlegang.motlana@gmail.com</td>
+            <td>0816783421</td>
+            <td>Cosmo City</td>
+        </tr>
+        <tr>
+            <td>Mahlatse</td>
+            <td>mahlatse.mokhabela@gmail.com</td>
+            <td>0793914901</td>
+            <td>75/615 Cosmo Creek</td>
+        </tr>
+        <tr>
+            <td>Karabo</td>
+            <td>karabopete98@gmail.com</td>
+            <td>0721233297</td>
+            <td>4558 block B</td>
+        </tr>
+        <tr>
+            <td>Remoratile</td>
+            <td>remoratile.mathonsi@gmail.com</td>
+            <td>0743611132</td>
+            <td>1580 Matshelapata</td>
+        </tr>
+    </table>
+    <br>
+    <!--image from pexels.com-->
+    <img src="pexels-cowomen-1058097-2041627.jpg" alt="cowomen" width="500px">
+    <!--lists ordered in roman-->
+    <ol type="i">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>PHP</li>
+    </ol>
+    <!--our video-->
+    <video controls width="700">
+        <source src="laptop.mp4">
+    </video>
+    <br>
+    <!--our audio-->
+    <audio controls>
+       <source src="Mercy Chinwo - Wonder (Official Video) (1).mp3" type="audio/mpeg"> 
+    </audio>
+   </main>
+   <br>
+   <!--here is our footer with submit button-->
+   <footer>
+     <button type="submit">Submit</button>
+   </footer>
+</body>
+</html>
